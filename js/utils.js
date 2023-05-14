@@ -401,7 +401,7 @@ const anzhiyu = {
         localStorage.removeItem("commentBarrageSwitch");
       }
     }
-    rm.hideRightMenu();
+    // rm.hideRightMenu();
   },
   // 初始化即刻
   initIndexEssay: function () {
