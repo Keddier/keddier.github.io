@@ -5526,11 +5526,11 @@ h1.page-title + .tag-cloud-list {
   flex-direction: column;
 }
 #aside-content >.card-widget.card-info {
-  background: -webkit-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
-  background: -moz-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
-  background: -o-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
-  background: -ms-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
-  background: linear-gradient(-25deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
+  background: -webkit-linear-gradient(115deg, #74ebd5 0%, #9face6 33%, #ffbbec 66%, #a9c9ff 100%);
+  background: -moz-linear-gradient(115deg, #74ebd5 0%, #9face6 33%, #ffbbec 66%, #a9c9ff 100%);
+  background: -o-linear-gradient(115deg, #74ebd5 0%, #9face6 33%, #ffbbec 66%, #a9c9ff 100%);
+  background: -ms-linear-gradient(115deg, #74ebd5 0%, #9face6 33%, #ffbbec 66%, #a9c9ff 100%);
+  background: linear-gradient(-25deg, #74ebd5 0%, #9face6 33%, #ffbbec 66%, #a9c9ff 100%);
   background-size: 400%;
   -webkit-animation: gradient 15s ease infinite;
   -moz-animation: gradient 15s ease infinite;
@@ -6381,7 +6381,8 @@ h1.page-title + .tag-cloud-list {
   height: 100%;
   top: 0;
   left: 0;
-  box-shadowss: 110px -130px 300px 60px var(--anzhiyu-bar-background) inset;
+  -webkit-box-shadow: 80px -100px 200px 60px var(--anzhiyu-bar-background) inset;
+  box-shadow: 80px -100px 200px 60px var(--anzhiyu-bar-background) inset;
 }
 #page-header.post-bg #post-top-cover #post-top-bg {
   width: 100%;
@@ -6504,7 +6505,8 @@ h1.page-title + .tag-cloud-list {
     height: 100%;
     bottom: 0;
     left: 0;
-    box-shadowss: 0px -214px 287px 45px var(--anzhiyu-bar-background) inset;
+    -webkit-box-shadow: 0px -104px 87px 45px var(--anzhiyu-bar-background) inset;
+    box-shadow: 0px -104px 87px 45px var(--anzhiyu-bar-background) inset;
     z-index: 0;
     -webkit-animation: none;
     -moz-animation: none;
@@ -6860,7 +6862,8 @@ h1.page-title + .tag-cloud-list {
   width: max-content;
   border-radius: 5px;
   background-color: var(--sidebar-bg);
-  box-shadowss: 0 5px 20px -4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   -webkit-animation: sub_menus 0.3s 0.1s ease both;
   -moz-animation: sub_menus 0.3s 0.1s ease both;
   -o-animation: sub_menus 0.3s 0.1s ease both;
@@ -7236,7 +7239,8 @@ h1.page-title + .tag-cloud-list {
   .post-bg:has(.bldbanner) #post-info:after,
   .post-bg:has(.bili-banner) #post-info:after,
   .post-bg:has(.blqbanner) #post-info:after {
-    box-shadowss: 0px -214px 287px 45px var(--anzhiyu-black-op) inset;
+    -webkit-box-shadow: 0px -114px 187px 45px var(--anzhiyu-black-op) inset;
+    box-shadow: 0px -114px 187px 45px var(--anzhiyu-black-op) inset;
   }
   .waves-area .waves-svg {
     height: 40px;
