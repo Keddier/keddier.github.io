@@ -1,61 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>0001测试页1</title>
+    <title>高数基础笔记</title>
     <url>/posts/1.html</url>
-    <content><![CDATA[<!-- title	【必需】文章标题 -->
-<!-- date	【必需】文章创建日期 -->
-<!-- updated	【可选】文章更新日期 -->
-<!-- tags	【可选】文章标签 -->
-<!-- categories	【可选】文章分类 -->
-<!-- keywords	【可选】文章关键字 -->
-<!-- description	【可选】文章描述 -->
-<!-- top_img	【可选】文章顶部图片 -->
-<!-- cover	【可选】文章缩略图(如果没有设置 top_img,文章页顶部将显示缩略图，可设为 false/图片地址/留空) -->
-<!-- comments	【可选】显示文章评论模块(默认 true) -->
-<!-- toc	【可选】显示文章 TOC(默认为设置中 toc 的 enable 配置) -->
-<!-- toc_number	【可选】显示 toc_number(默认为设置中 toc 的 number 配置) -->
-<!-- toc_style_simple	【可选】显示 toc 简洁模式 -->
-<!-- copyright	【可选】显示文章版权模块(默认为设置中 post_copyright 的 enable 配置) -->
-<!-- copyright_author	【可选】文章版权模块的文章作者 -->
-<!-- copyright_author_href	【可选】文章版权模块的文章作者链接 -->
-<!-- copyright_url	【可选】文章版权模块的文章链接链接 -->
-<!-- copyright_info	【可选】文章版权模块的版权声明文字 -->
-<!-- mathjax	【可选】显示 mathjax(当设置 mathjax 的 per_page: false 时，才需要配置，默认 false) -->
-<!-- katex	【可选】显示 katex(当设置 katex 的 per_page: false 时，才需要配置，默认 false) -->
-<!-- aplayer	【可选】在需要的页面加载 aplayer 的 js 和 css,请参考文章下面的音乐 配置 -->
-<!-- highlight_shrink	【可选】配置代码框是否展开(true/false)(默认为设置中 highlight_shrink 的配置) -->
-<!-- aside	【可选】显示侧边栏 (默认 true) -->
-<!-- swiper_index	【可选】首页轮播图配置 index 索引，数字越小越靠前 -->
-<!-- top_group_index	【可选】首页右侧卡片组配置, 数字越小越靠前 -->
-<!-- background	【可选】文章背景可配置为 16 进制颜色值 -->
-
-   <!-- 首页轮播图配置: swiper_index, 数字越小越靠前 -->
-   <!-- 首页卡片配置: top_group_index, 数字越小越靠前 -->
-   <!-- page 中background, 可配置为 16 进制颜色值 -->]]></content>
+    <content><![CDATA[<h1 id="第一章-函数、极限与连续性"><a href="#第一章-函数、极限与连续性" class="headerlink" title="第一章 函数、极限与连续性"></a>第一章 函数、极限与连续性</h1><h2 id="1-函数"><a href="#1-函数" class="headerlink" title="1.函数"></a>1.函数</h2><p>y&#x3D;f(x)或u&#x3D;f(v)都表示函数f，用什么变量表示与函数无关。</p>
+<p>f(x)&#x3D;x (x∈D)，写完函数要加定义域。</p>
+<p>对含有根号的式子，化简考虑分式有理化！</p>
+<p>解题时涉及到定义域变化，要根据题意判定区间范围的变化。——用t代换，注意t的范围</p>
+<h3 id="反函数的表示"><a href="#反函数的表示" class="headerlink" title="反函数的表示"></a>反函数的表示</h3><p>，y&#x3D;f(x)→f^-1^&#x3D;f(y)，→→y&#x3D;f[g(x)]→f^-1^(y)&#x3D;g(x)，有时候为了更加直观记为y&#x3D;f^-1^(y)，有结论<code>f[g(x)]=x</code>，<code>g[f(x)]=x</code></p>
+<ul>
+<li><p>则求<code>y=f[(1/2)g(3x)]</code>的反函数，</p>
+<p>f^-1^(y)&#x3D;(1&#x2F;2)g(3x)</p>
+<p>2f^-1^(y)&#x3D;g(3x)</p>
+<p>3x&#x3D;g^-1^[2f^-1^(y)]</p>
+<p>所以反函数为：y&#x3D;(1&#x2F;3)f[2g(x)]</p>
+</li>
+</ul>
+<p>单调函数的复合函数也是单调函数</p>
+<h3 id="三角函数倍角公式"><a href="#三角函数倍角公式" class="headerlink" title="三角函数倍角公式"></a>三角函数倍角公式</h3><p>sin2x &#x3D; 2sinx cosx</p>
+<p>cos2x &#x3D; cos^2^x - sin^2^x &#x3D; 2cos^2^x - 1 &#x3D; 1- sin^2^x</p>
+<p>tan2x &#x3D; (2tanx) &#x2F; (1-tan^2^x)</p>
+<p>cot2x &#x3D; (cot^2^x-1) &#x2F; cotx</p>
+<h2 id="2-极限"><a href="#2-极限" class="headerlink" title="2.极限"></a>2.极限</h2><p>极限的左右极限相等，是极限存在的充要条件，极限在那一点的值存不存在无关。</p>
+<p><code>无穷/无穷</code>的极限，<u>抓大放小</u>或<u>转化为0&#x2F;0</u></p>
+<p>lim(x→0)arctan(1&#x2F;x)要区分左右极限</p>
+<h2 id="3-无穷小量"><a href="#3-无穷小量" class="headerlink" title="3.无穷小量"></a>3.无穷小量</h2><ul>
+<li>两个无穷大之和是无穷大</li>
+<li>两个无穷大之积是无穷大</li>
+<li>正无穷大与有界量之和仍为无穷大</li>
+</ul>
+<p><code>0*有界</code>、<code>有界/无穷</code>都是0</p>
+<p>若lim(β &#x2F; α^k^) ≠ 0，其中 k&gt;0，则称β为α的k阶无穷小</p>
+<p>x^2^为x的高阶无穷小</p>
+<h2 id="4-函数的连续性"><a href="#4-函数的连续性" class="headerlink" title="4.函数的连续性"></a>4.函数的连续性</h2><p>存在间断点时，把题中不存在的点都进行判断。</p>
+<p>x代入后正常，没有不存在的，则直接代入运算。</p>
+<p>间断点通常在函数无定义点和分段点。</p>
+<h2 id="5-闭区间上连续函数的性质"><a href="#5-闭区间上连续函数的性质" class="headerlink" title="5.闭区间上连续函数的性质"></a>5.闭区间上连续函数的性质</h2><p>对存在数列的情况，先证明单调性，再设极限。</p>
+<p>证明题直接解不通时，作辅助函数来证明</p>
+<h1 id="第二章-导数与微分"><a href="#第二章-导数与微分" class="headerlink" title="第二章 导数与微分"></a>第二章 导数与微分</h1><p>幂指函数求导时要引入<code>lne 或 e^ln^</code></p>
+<p>分段函数要考虑分段点是否可导，先证连续，再证是否可导</p>
+<p>隐函数的求导，必要时两边都加上<code>ln</code>进行化简。</p>
+<p>极坐标方程转化时注意x&#x3D;rcosθ，y&#x3D;rsinθ</p>
+<p>驻点是y’&#x3D;0，是取得极值的必要条件，可导的极值点是驻点，驻点不一定是极值点</p>
+<p>拐点存在的必要条件是<code>y&#39;&#39;=0或y&#39;&#39;不存在</code>的点</p>
+<p>极值是<code>一阶导数</code>等于0或不存在，一阶导数在点处左右异号</p>
+<p>凹凸性是<code>二阶导数</code>等于0或不存在，y’’&gt;0则是凹的，y’’&lt;0则是凸的</p>
+<p>若函数中存在<code>|x|</code>，要将其分开讨论，求导时，注意<code>|x|</code>的导数是不存在的！</p>
+<h2 id="1-导数与微分的概念"><a href="#1-导数与微分的概念" class="headerlink" title="1.导数与微分的概念"></a>1.导数与微分的概念</h2><p>导数的定义……，两种方式，一种△x→0，一种x→x<del>0</del></p>
+<p>若f(x)是奇函数可导，则f’(x)是偶函数。</p>
+<p>若f(x)是偶函数可导，则f’(x)是奇函数。</p>
+<ul>
+<li>根据导数的定义可以推出：设g(x)在x&#x3D;a处连续，则<code>f(x)=g(x)|x-a|</code>，在x&#x3D;a处可导的充要条件是<code>g(a)=0</code>。</li>
+</ul>
+<p>化简函数时，最后再去绝对值</p>
+<h2 id="2-导数的几何意义"><a href="#2-导数的几何意义" class="headerlink" title="2.导数的几何意义"></a>2.导数的几何意义</h2><p>切线斜率为<code>f&#39;(x)</code></p>
+<p>法线斜率为<code>-1/f&#39;(x)</code></p>
+<h2 id="3-渐近线"><a href="#3-渐近线" class="headerlink" title="3.渐近线"></a>3.渐近线</h2><ul>
+<li>先找水平渐近线，x→无穷</li>
+<li>再找斜渐近线，x→无穷</li>
+<li>最后找铅直渐近线，x不存在的点</li>
+</ul>
+<h1 id="第三章-微分中值定理及其应用"><a href="#第三章-微分中值定理及其应用" class="headerlink" title="第三章 微分中值定理及其应用"></a>第三章 微分中值定理及其应用</h1><p>罗尔中值定理、拉格朗日中值定理、柯西中值定理、泰勒中值定理（→麦克劳林公式）</p>
+<p>微分中值定理是连接导数与函数的桥梁。</p>
+<h2 id="洛必达法则"><a href="#洛必达法则" class="headerlink" title="洛必达法则"></a>洛必达法则</h2><p>7种未定型：<u>0&#x2F;0</u>，<u>∞&#x2F;∞</u>，<u>∞-∞</u>，<u>0·∞</u>，<u>1^∞^</u>，<u>0^0^</u>，<u>∞^0^</u></p>
+<p>做题方法：</p>
+<ol>
+<li>先定型</li>
+<li>再化简<ol>
+<li>等价（整体乘除）</li>
+<li>整体乘除中非0极限可先算出</li>
+<li>恒等变形：分式通分，根式有理化</li>
+</ol>
+</li>
+<li>后定法<ol>
+<li><code>0/0</code><ol>
+<li>洛必达</li>
+<li>泰勒公式</li>
+<li>已知某点导数，利用导数定义求0&#x2F;0</li>
+</ol>
+</li>
+<li><code>∞/∞</code><ol>
+<li>抓大头，分子分母同除最大无穷大：由慢→快lnx，x^a^，a^x^，x^x^（对，幂，指，幂指）</li>
+<li>洛必达</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="第四章-不定积分"><a href="#第四章-不定积分" class="headerlink" title="第四章 不定积分"></a>第四章 不定积分</h1><h1 id="第五章-定积分及其应用"><a href="#第五章-定积分及其应用" class="headerlink" title="第五章 定积分及其应用"></a>第五章 定积分及其应用</h1><h1 id="第六章-常微分方程"><a href="#第六章-常微分方程" class="headerlink" title="第六章 常微分方程"></a>第六章 常微分方程</h1><h1 id="第七章-多元函数微分学及其应用"><a href="#第七章-多元函数微分学及其应用" class="headerlink" title="第七章 多元函数微分学及其应用"></a>第七章 多元函数微分学及其应用</h1><h1 id="第八章-二重积分"><a href="#第八章-二重积分" class="headerlink" title="第八章 二重积分"></a>第八章 二重积分</h1><h1 id="第九章-无穷级数"><a href="#第九章-无穷级数" class="headerlink" title="第九章 无穷级数"></a>第九章 无穷级数</h1>]]></content>
+      <categories>
+        <category>高数</category>
+      </categories>
       <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/posts/3eeb.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>tess</tag>
+        <tag>高数基础</tag>
       </tags>
   </entry>
 </search>
