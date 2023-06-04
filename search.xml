@@ -3,83 +3,102 @@
   <entry>
     <title>高数基础笔记</title>
     <url>/posts/1.html</url>
-    <content><![CDATA[<h1 id="第一章-函数、极限与连续性"><a href="#第一章-函数、极限与连续性" class="headerlink" title="第一章 函数、极限与连续性"></a>第一章 函数、极限与连续性</h1><h2 id="1-函数"><a href="#1-函数" class="headerlink" title="1.函数"></a>1.函数</h2><p>y&#x3D;f(x)或u&#x3D;f(v)都表示函数f，用什么变量表示与函数无关。</p>
-<p>f(x)&#x3D;x (x∈D)，写完函数要加定义域。</p>
+    <content><![CDATA[<h1>第一章 函数、极限与连续性</h1>
+<h2 id="1-函数">1.函数</h2>
+<p>y=f(x)或u=f(v)都表示函数f，用什么变量表示与函数无关。</p>
+<p>f(x)=x (x∈D)，写完函数要加定义域。</p>
 <p>对含有根号的式子，化简考虑分式有理化！</p>
 <p>解题时涉及到定义域变化，要根据题意判定区间范围的变化。——用t代换，注意t的范围</p>
-<h3 id="反函数的表示"><a href="#反函数的表示" class="headerlink" title="反函数的表示"></a>反函数的表示</h3><p>，y&#x3D;f(x)→f^-1^&#x3D;f(y)，→→y&#x3D;f[g(x)]→f^-1^(y)&#x3D;g(x)，有时候为了更加直观记为y&#x3D;f^-1^(y)，有结论<code>f[g(x)]=x</code>，<code>g[f(x)]=x</code></p>
+<h3 id="反函数的表示">反函数的表示</h3>
+<p>，y=f(x)→f^-1^=f(y)，→→y=f[g(x)]→f^-1^(y)=g(x)，有时候为了更加直观记为y=f^-1^(y)，有结论<code>f[g(x)]=x</code>，<code>g[f(x)]=x</code></p>
 <ul>
-<li><p>则求<code>y=f[(1/2)g(3x)]</code>的反函数，</p>
-<p>f^-1^(y)&#x3D;(1&#x2F;2)g(3x)</p>
-<p>2f^-1^(y)&#x3D;g(3x)</p>
-<p>3x&#x3D;g^-1^[2f^-1^(y)]</p>
-<p>所以反函数为：y&#x3D;(1&#x2F;3)f[2g(x)]</p>
+<li>
+<p>则求<code>y=f[(1/2)g(3x)]</code>的反函数，</p>
+<p>f^-1^(y)=(1/2)g(3x)</p>
+<p>2f^-1^(y)=g(3x)</p>
+<p>3x=g^-1^[2f^-1^(y)]</p>
+<p>所以反函数为：y=(1/3)f[2g(x)]</p>
 </li>
 </ul>
 <p>单调函数的复合函数也是单调函数</p>
-<h3 id="三角函数倍角公式"><a href="#三角函数倍角公式" class="headerlink" title="三角函数倍角公式"></a>三角函数倍角公式</h3><p>sin2x &#x3D; 2sinx cosx</p>
-<p>cos2x &#x3D; cos^2^x - sin^2^x &#x3D; 2cos^2^x - 1 &#x3D; 1- sin^2^x</p>
-<p>tan2x &#x3D; (2tanx) &#x2F; (1-tan^2^x)</p>
-<p>cot2x &#x3D; (cot^2^x-1) &#x2F; cotx</p>
-<h2 id="2-极限"><a href="#2-极限" class="headerlink" title="2.极限"></a>2.极限</h2><p>极限的左右极限相等，是极限存在的充要条件，极限在那一点的值存不存在无关。</p>
-<p><code>无穷/无穷</code>的极限，<u>抓大放小</u>或<u>转化为0&#x2F;0</u></p>
-<p>lim(x→0)arctan(1&#x2F;x)要区分左右极限</p>
-<h2 id="3-无穷小量"><a href="#3-无穷小量" class="headerlink" title="3.无穷小量"></a>3.无穷小量</h2><ul>
+<h3 id="三角函数倍角公式">三角函数倍角公式</h3>
+<p>sin2x = 2sinx cosx</p>
+<p>cos2x = cos^2^x - sin^2^x = 2cos^2^x - 1 = 1- sin^2^x</p>
+<p>tan2x = (2tanx) / (1-tan^2^x)</p>
+<p>cot2x = (cot^2^x-1) / cotx</p>
+<h2 id="2-极限">2.极限</h2>
+<p>极限的左右极限相等，是极限存在的充要条件，极限在那一点的值存不存在无关。</p>
+<p><code>无穷/无穷</code>的极限，<u>抓大放小</u>或<u>转化为0/0</u></p>
+<p>lim(x→0)arctan(1/x)要区分左右极限</p>
+<h2 id="3-无穷小量">3.无穷小量</h2>
+<ul>
 <li>两个无穷大之和是无穷大</li>
 <li>两个无穷大之积是无穷大</li>
 <li>正无穷大与有界量之和仍为无穷大</li>
 </ul>
 <p><code>0*有界</code>、<code>有界/无穷</code>都是0</p>
-<p>若lim(β &#x2F; α^k^) ≠ 0，其中 k&gt;0，则称β为α的k阶无穷小</p>
+<p>若lim(β / α^k^) ≠ 0，其中 k&gt;0，则称β为α的k阶无穷小</p>
 <p>x^2^为x的高阶无穷小</p>
-<h2 id="4-函数的连续性"><a href="#4-函数的连续性" class="headerlink" title="4.函数的连续性"></a>4.函数的连续性</h2><p>存在间断点时，把题中不存在的点都进行判断。</p>
+<h2 id="4-函数的连续性">4.函数的连续性</h2>
+<p>存在间断点时，把题中不存在的点都进行判断。</p>
 <p>x代入后正常，没有不存在的，则直接代入运算。</p>
 <p>间断点通常在函数无定义点和分段点。</p>
-<h2 id="5-闭区间上连续函数的性质"><a href="#5-闭区间上连续函数的性质" class="headerlink" title="5.闭区间上连续函数的性质"></a>5.闭区间上连续函数的性质</h2><p>对存在数列的情况，先证明单调性，再设极限。</p>
+<h2 id="5-闭区间上连续函数的性质">5.闭区间上连续函数的性质</h2>
+<p>对存在数列的情况，先证明单调性，再设极限。</p>
 <p>证明题直接解不通时，作辅助函数来证明</p>
-<h1 id="第二章-导数与微分"><a href="#第二章-导数与微分" class="headerlink" title="第二章 导数与微分"></a>第二章 导数与微分</h1><p>幂指函数求导时要引入<code>lne 或 e^ln^</code></p>
+<h1>第二章 导数与微分</h1>
+<p>幂指函数求导时要引入<code>lne 或 e^ln^</code></p>
 <p>分段函数要考虑分段点是否可导，先证连续，再证是否可导</p>
 <p>隐函数的求导，必要时两边都加上<code>ln</code>进行化简。</p>
-<p>极坐标方程转化时注意x&#x3D;rcosθ，y&#x3D;rsinθ</p>
-<p>驻点是y’&#x3D;0，是取得极值的必要条件，可导的极值点是驻点，驻点不一定是极值点</p>
-<p>拐点存在的必要条件是<code>y&#39;&#39;=0或y&#39;&#39;不存在</code>的点</p>
+<p>极坐标方程转化时注意x=rcosθ，y=rsinθ</p>
+<p>驻点是y’=0，是取得极值的必要条件，可导的极值点是驻点，驻点不一定是极值点</p>
+<p>拐点存在的必要条件是<code>y''=0或y''不存在</code>的点</p>
 <p>极值是<code>一阶导数</code>等于0或不存在，一阶导数在点处左右异号</p>
-<p>凹凸性是<code>二阶导数</code>等于0或不存在，y’’&gt;0则是凹的，y’’&lt;0则是凸的</p>
+<p>凹凸性是<code>二阶导数</code>等于0或不存在，y’‘&gt;0则是凹的，y’'&lt;0则是凸的</p>
 <p>若函数中存在<code>|x|</code>，要将其分开讨论，求导时，注意<code>|x|</code>的导数是不存在的！</p>
-<h2 id="1-导数与微分的概念"><a href="#1-导数与微分的概念" class="headerlink" title="1.导数与微分的概念"></a>1.导数与微分的概念</h2><p>导数的定义……，两种方式，一种△x→0，一种x→x<del>0</del></p>
+<h2 id="1-导数与微分的概念">1.导数与微分的概念</h2>
+<p>导数的定义……，两种方式，一种△x→0，一种x→x~0~</p>
 <p>若f(x)是奇函数可导，则f’(x)是偶函数。</p>
 <p>若f(x)是偶函数可导，则f’(x)是奇函数。</p>
 <ul>
-<li>根据导数的定义可以推出：设g(x)在x&#x3D;a处连续，则<code>f(x)=g(x)|x-a|</code>，在x&#x3D;a处可导的充要条件是<code>g(a)=0</code>。</li>
+<li>根据导数的定义可以推出：设g(x)在x=a处连续，则<code>f(x)=g(x)|x-a|</code>，在x=a处可导的充要条件是<code>g(a)=0</code>。</li>
 </ul>
 <p>化简函数时，最后再去绝对值</p>
-<h2 id="2-导数的几何意义"><a href="#2-导数的几何意义" class="headerlink" title="2.导数的几何意义"></a>2.导数的几何意义</h2><p>切线斜率为<code>f&#39;(x)</code></p>
-<p>法线斜率为<code>-1/f&#39;(x)</code></p>
-<h2 id="3-渐近线"><a href="#3-渐近线" class="headerlink" title="3.渐近线"></a>3.渐近线</h2><ul>
+<h2 id="2-导数的几何意义">2.导数的几何意义</h2>
+<p>切线斜率为<code>f'(x)</code></p>
+<p>法线斜率为<code>-1/f'(x)</code></p>
+<h2 id="3-渐近线">3.渐近线</h2>
+<ul>
 <li>先找水平渐近线，x→无穷</li>
 <li>再找斜渐近线，x→无穷</li>
 <li>最后找铅直渐近线，x不存在的点</li>
 </ul>
-<h1 id="第三章-微分中值定理及其应用"><a href="#第三章-微分中值定理及其应用" class="headerlink" title="第三章 微分中值定理及其应用"></a>第三章 微分中值定理及其应用</h1><p>罗尔中值定理、拉格朗日中值定理、柯西中值定理、泰勒中值定理（→麦克劳林公式）</p>
+<h1>第三章 微分中值定理及其应用</h1>
+<p>罗尔中值定理、拉格朗日中值定理、柯西中值定理、泰勒中值定理（→麦克劳林公式）</p>
 <p>微分中值定理是连接导数与函数的桥梁。</p>
-<h2 id="洛必达法则"><a href="#洛必达法则" class="headerlink" title="洛必达法则"></a>洛必达法则</h2><p>7种未定型：<u>0&#x2F;0</u>，<u>∞&#x2F;∞</u>，<u>∞-∞</u>，<u>0·∞</u>，<u>1^∞^</u>，<u>0^0^</u>，<u>∞^0^</u></p>
+<h2 id="洛必达法则">洛必达法则</h2>
+<p>7种未定型：<u>0/0</u>，<u>∞/∞</u>，<u>∞-∞</u>，<u>0·∞</u>，<u>1^∞^</u>，<u>0^0^</u>，<u>∞^0^</u></p>
 <p>做题方法：</p>
 <ol>
 <li>先定型</li>
-<li>再化简<ol>
+<li>再化简
+<ol>
 <li>等价（整体乘除）</li>
 <li>整体乘除中非0极限可先算出</li>
 <li>恒等变形：分式通分，根式有理化</li>
 </ol>
 </li>
-<li>后定法<ol>
-<li><code>0/0</code><ol>
+<li>后定法
+<ol>
+<li><code>0/0</code>
+<ol>
 <li>洛必达</li>
 <li>泰勒公式</li>
-<li>已知某点导数，利用导数定义求0&#x2F;0</li>
+<li>已知某点导数，利用导数定义求0/0</li>
 </ol>
 </li>
-<li><code>∞/∞</code><ol>
+<li><code>∞/∞</code>
+<ol>
 <li>抓大头，分子分母同除最大无穷大：由慢→快lnx，x^a^，a^x^，x^x^（对，幂，指，幂指）</li>
 <li>洛必达</li>
 </ol>
@@ -87,7 +106,13 @@
 </ol>
 </li>
 </ol>
-<h1 id="第四章-不定积分"><a href="#第四章-不定积分" class="headerlink" title="第四章 不定积分"></a>第四章 不定积分</h1><h1 id="第五章-定积分及其应用"><a href="#第五章-定积分及其应用" class="headerlink" title="第五章 定积分及其应用"></a>第五章 定积分及其应用</h1><h1 id="第六章-常微分方程"><a href="#第六章-常微分方程" class="headerlink" title="第六章 常微分方程"></a>第六章 常微分方程</h1><h1 id="第七章-多元函数微分学及其应用"><a href="#第七章-多元函数微分学及其应用" class="headerlink" title="第七章 多元函数微分学及其应用"></a>第七章 多元函数微分学及其应用</h1><h1 id="第八章-二重积分"><a href="#第八章-二重积分" class="headerlink" title="第八章 二重积分"></a>第八章 二重积分</h1><h1 id="第九章-无穷级数"><a href="#第九章-无穷级数" class="headerlink" title="第九章 无穷级数"></a>第九章 无穷级数</h1>]]></content>
+<h1>第四章 不定积分</h1>
+<h1>第五章 定积分及其应用</h1>
+<h1>第六章 常微分方程</h1>
+<h1>第七章 多元函数微分学及其应用</h1>
+<h1>第八章 二重积分</h1>
+<h1>第九章 无穷级数</h1>
+]]></content>
       <categories>
         <category>高数</category>
       </categories>
@@ -98,18 +123,20 @@
   <entry>
     <title>英语语法长难句</title>
     <url>/posts/2.html</url>
-    <content><![CDATA[<h1 id="考研语法长难句"><a href="#考研语法长难句" class="headerlink" title="考研语法长难句"></a>考研语法长难句</h1><p>名词——动名词和不定式——<u>名词性从句</u>（主、宾、表、同）</p>
+    <content><![CDATA[<h1>考研语法长难句</h1>
+<p>名词——动名词和不定式——<u>名词性从句</u>（主、宾、表、同）</p>
 <p>形容词——<u>定语从句</u>（形容词性从句）——现在分词、过去分词</p>
 <p>副词——现在分词、过去分词——<u>状语从句</u>（副词性从句）9类</p>
 <p>特殊结构——省略结构、比较结构、倒装结构、分割结构</p>
 <hr>
-<p>主从复合句：谓语动词的个数 &#x3D; 从属连词的个数+1</p>
+<p>主从复合句：谓语动词的个数 = 从属连词的个数+1</p>
 <hr>
 <p>虚拟语气主要用来描述“脑中想象的动作事件”，非真实世界里发生的</p>
 <p>虚拟语气表达与事实相反：</p>
 <ol>
 <li>与现在相反（条件句：过去式，主句：would+动词原形）</li>
-<li>与将来相反（条件句：should+动词原形，主句：would+动词原形）<ul>
+<li>与将来相反（条件句：should+动词原形，主句：would+动词原形）
+<ul>
 <li>条件句中should可以用were to替代</li>
 <li>主句中的would可以用should、might、could替换</li>
 <li>要根据不同语境来替换</li>
@@ -119,43 +146,48 @@
 </ol>
 <p>虚拟语气表达愿望、请求、建议、命令等</p>
 <ol>
-<li>wish——希望可能性小的事发生，表达现在情况的“不可能”的希望<ol>
-<li>对现在的愿望：wish+动词过去式<ul>
+<li>wish——希望可能性小的事发生，表达现在情况的“不可能”的希望
+<ol>
+<li>对现在的愿望：wish+动词过去式
+<ul>
 <li>如果动词是be，则过去式用were（不管是哪个人称）</li>
 </ul>
 </li>
-<li>对过去的愿望：wish+<code>had</code> &#x2F; <code>would have</code>+动词过去分词</li>
-<li>对将来的愿望：wish + <code>would</code> &#x2F; <code>could</code> &#x2F; <code>might</code> +动词原形</li>
+<li>对过去的愿望：wish+<code>had</code> / <code>would have</code>+动词过去分词</li>
+<li>对将来的愿望：wish + <code>would</code> / <code>could</code> / <code>might</code> +动词原形</li>
 </ol>
 </li>
 <li><code>would rather</code>——同wish</li>
-<li>demand（要求）、suggest（建议）、insist（坚持）、order（命令）<ul>
+<li>demand（要求）、suggest（建议）、insist（坚持）、order（命令）
+<ul>
 <li>这样的词后面接的虚拟语气一律是should+动词原形</li>
-<li>I demand&#x2F;suggest&#x2F;insist&#x2F;order that you (should) give me a book.——我要求……</li>
-<li>I demanded&#x2F;suggested&#x2F;insisted&#x2F;ordered that you (should) give me a book.——我之前要求……</li>
+<li>I demand/suggest/insist/order that you (should) give me a book.——我要求……</li>
+<li>I demanded/suggested/insisted/ordered that you (should) give me a book.——我之前要求……</li>
 </ul>
 </li>
 </ol>
-<h1 id="一、名词性从句"><a href="#一、名词性从句" class="headerlink" title="一、名词性从句"></a>一、名词性从句</h1><p>常用句型的成分：主语、宾语、表语、同位语</p>
+<h1>一、名词性从句</h1>
+<p>常用句型的成分：主语、宾语、表语、同位语</p>
 <p>句子构成：①<code>动名词：动名词ing</code>；②<code>不定式：to + 动词原形</code></p>
 <p>that引导主语从句时一般不省略</p>
 <p>that+完整句子→that无意义</p>
 <p>That the plates are moving is now <u>beyond dispute</u>.</p>
 <p>beyond dispute:超出了争议——毋庸置疑</p>
-<p><code>whether</code> &#x3D; <code>whether ... or not</code>  是否</p>
+<p><code>whether</code> = <code>whether ... or not</code>  是否</p>
 <p>if引导<u>名词性从句</u>（宾、表）：是否</p>
 <p>if引导<u>状语从句</u>：如果</p>
 <p>表语从句：The discussion is whether the book is worth reading.</p>
 <p>同位语从句大多数由<code>that / whether</code>引导：</p>
 <p>We found out the fact that he was kiled.</p>
-<h1 id="二、定语从句"><a href="#二、定语从句" class="headerlink" title="二、定语从句"></a>二、定语从句</h1><p>作为形容词修饰名词</p>
+<h1>二、定语从句</h1>
+<p>作为形容词修饰名词</p>
 <p>形容词的语法功能：定语、表语、状语、补语</p>
 <p>​		more修饰比较级，most修饰最高级</p>
 <p>定语从句构成：先行词（被修饰的名词）+ 关系词（引导词）</p>
 <p>引导词：</p>
 <ul>
 <li><strong>关系代词</strong>：that、which、who、whom、whose、as（代指人或物）</li>
-<li><strong>关系副词</strong>：when、where、why、whereby（whereby&#x3D;by）</li>
+<li><strong>关系副词</strong>：when、where、why、whereby（whereby=by）</li>
 </ul>
 <p>引导词功能：</p>
 <ol>
@@ -167,16 +199,19 @@
 <p>​		The reason that she gives is unbelievable.</p>
 <p>定语从句引导词为关系副词时：when、where、why、whereby</p>
 <ul>
-<li>时间 + when<ul>
+<li>时间 + when
+<ul>
 <li><u>The day <strong>when</strong> we stop learning</u> is the day when we die.</li>
-<li>&#x3D; we stop learn on the day</li>
+<li>= we stop learn on the day</li>
 </ul>
 </li>
-<li>地点 + where<ul>
+<li>地点 + where
+<ul>
 <li>Literature is the place <strong>where</strong> the past meets the present to contemplate the future.</li>
 </ul>
 </li>
-<li>原因 + why<ul>
+<li>原因 + why
+<ul>
 <li>That’s one reason <strong>why</strong> we have launched Arc, <u>a new publication dedicated to the near future</u>.</li>
 <li>逗号后同位语从句解释Arc</li>
 </ul>
@@ -184,46 +219,59 @@
 </ul>
 <p>限定性定语从句：被修饰词与后面引导词中间无逗号</p>
 <p>非限定性定语从句：有逗号隔开，大多数引导词是<code>which、as</code>，as可位于句首。</p>
-<h2 id="as引导限定性定语从句"><a href="#as引导限定性定语从句" class="headerlink" title="as引导限定性定语从句"></a>as引导限定性定语从句</h2><p>所修饰的名词前有<code>such</code>、<code>the same</code>、<code>as</code>出现，后面的从句将由as引导</p>
+<h2 id="as引导限定性定语从句">as引导限定性定语从句</h2>
+<p>所修饰的名词前有<code>such</code>、<code>the same</code>、<code>as</code>出现，后面的从句将由as引导</p>
 <ul>
-<li>He’ll repeat <u><code>such</code> questions <code>as</code></u> are discussed in the book.<ul>
+<li>He’ll repeat <u><code>such</code> questions <code>as</code></u> are discussed in the book.
+<ul>
 <li>像……的问题</li>
 </ul>
 </li>
-<li><code>Such</code> a student <code>as</code> works hard will be sure to succeed.<ul>
+<li><code>Such</code> a student <code>as</code> works hard will be sure to succeed.
+<ul>
 <li>像这样的学生</li>
 </ul>
 </li>
-<li>They made <u><code>the same</code> mistake <code>as</code></u> others would have made on such an occasion.<ul>
+<li>They made <u><code>the same</code> mistake <code>as</code></u> others would have made on such an occasion.
+<ul>
 <li>类似（像）相同的错误</li>
 </ul>
 </li>
-<li>He tried to make <u><code>as</code> few mistakes <code>as</code></u> he could avoid.<ul>
+<li>He tried to make <u><code>as</code> few mistakes <code>as</code></u> he could avoid.
+<ul>
 <li>错误少到，（as…as…  和…一样）</li>
 </ul>
 </li>
 </ul>
-<h2 id="as引导非限定性定语从句"><a href="#as引导非限定性定语从句" class="headerlink" title="as引导非限定性定语从句"></a>as引导非限定性定语从句</h2><p>句中有逗号，一般情况下写法为：<code>先行词, 引导词</code></p>
+<h2 id="as引导非限定性定语从句">as引导非限定性定语从句</h2>
+<p>句中有逗号，一般情况下写法为：<code>先行词, 引导词</code></p>
 <p>非限定性定语从句往往<code>指代一整句话</code>——先行词可能是一句话</p>
 <p>as引导时可位于先行词之前、之后或中间</p>
 <p>which引导的非限定性定语从句只能位于<u>先行词</u><code>之后</code>。</p>
 <p>as在从句中作<code>主语</code>或<code>宾语</code>时——定语从句</p>
-<h1 id="三、现在分词和过去分词"><a href="#三、现在分词和过去分词" class="headerlink" title="三、现在分词和过去分词"></a>三、现在分词和过去分词</h1><p>现在分词——主动或进行——doing</p>
+<h1>三、现在分词和过去分词</h1>
+<p>现在分词——主动或进行——doing</p>
 <p>过去分词——被动或完成——done</p>
-<h2 id="分词做定语"><a href="#分词做定语" class="headerlink" title="分词做定语"></a>分词做定语</h2><h2 id="分词做状语"><a href="#分词做状语" class="headerlink" title="分词做状语"></a>分词做状语</h2><ol>
+<h2 id="分词做定语">分词做定语</h2>
+<h2 id="分词做状语">分词做状语</h2>
+<ol>
 <li>分词作状语时，和主句之间有一种逻辑关系，可以转换成状语从句</li>
 <li>分词作状语时，分词的逻辑主语与主句主语一致</li>
 <li>分词作状语时，若分词的逻辑主语与主句不一致时必须加上其逻辑主语。（独立主格结构）</li>
 </ol>
-<h2 id="独立主格结构"><a href="#独立主格结构" class="headerlink" title="独立主格结构"></a>独立主格结构</h2><p>独立主格结构的实质就是分词的逻辑主语和主句不一致了。</p>
+<h2 id="独立主格结构">独立主格结构</h2>
+<p>独立主格结构的实质就是分词的逻辑主语和主句不一致了。</p>
 <ol>
 <li>名词 + 分词</li>
 <li>介词 + 名词 + 分词</li>
 <li>副词 + 分词</li>
 </ol>
-<h1 id="状语从句"><a href="#状语从句" class="headerlink" title="状语从句"></a>状语从句</h1><p>——可在句子中任何位置</p>
+<h1>状语从句</h1>
+<p>——可在句子中任何位置</p>
 <p>状语类别：时间、地点、原因、结果、目的、条件、让步、比较、方式</p>
-<h2 id="1、时间状语从句"><a href="#1、时间状语从句" class="headerlink" title="1、时间状语从句"></a>1、时间状语从句</h2><h3 id="常用引导词"><a href="#常用引导词" class="headerlink" title="常用引导词"></a>常用引导词</h3><p><code>when</code>，<code>while</code>，<code>as</code>，<code>before</code>，<code>after</code>，<code>since</code>，<code>till</code>，<code>until</code>，<code>as soon as</code>，<code>the moment</code>，<code>the minute</code>，<code>the day</code>，<code>every time</code>，<code>no sooner … that …</code>，<code>hardly … when</code> ，<code>scarely … when</code></p>
+<h2 id="1、时间状语从句">1、时间状语从句</h2>
+<h3 id="常用引导词">常用引导词</h3>
+<p><code>when</code>，<code>while</code>，<code>as</code>，<code>before</code>，<code>after</code>，<code>since</code>，<code>till</code>，<code>until</code>，<code>as soon as</code>，<code>the moment</code>，<code>the minute</code>，<code>the day</code>，<code>every time</code>，<code>no sooner … that …</code>，<code>hardly … when</code> ，<code>scarely … when</code></p>
 <p><code>till</code>：直到……</p>
 <p><code>until</code>：在……前；倒装句中 <code>not until</code> 直到…才</p>
 <p><code>as soon as</code>：一……就</p>
@@ -239,14 +287,212 @@
 <li>短语引导词</li>
 <li>时间名词引导词</li>
 </ol>
-<h2 id="2、让步状语从句"><a href="#2、让步状语从句" class="headerlink" title="2、让步状语从句"></a>2、让步状语从句</h2><p>——即使……也……；无论……还是……；虽然……但是……</p>
+<h2 id="2、让步状语从句">2、让步状语从句</h2>
+<p>——即使……也……；无论……还是……；虽然……但是……</p>
 <p>表对立关系：虽然↑，但是↓；或    虽然↓，但是↑</p>
-<h3 id="though系列"><a href="#though系列" class="headerlink" title="though系列"></a>though系列</h3><h3 id="while系列"><a href="#while系列" class="headerlink" title="while系列"></a>while系列</h3><h3 id="no-matter系列"><a href="#no-matter系列" class="headerlink" title="no matter系列"></a>no matter系列</h3><h3 id="as系列"><a href="#as系列" class="headerlink" title="as系列"></a>as系列</h3>]]></content>
+<h3 id="though系列">though系列</h3>
+<h3 id="while系列">while系列</h3>
+<h3 id="no-matter系列">no matter系列</h3>
+<h3 id="as系列">as系列</h3>
+]]></content>
       <categories>
         <category>English</category>
       </categories>
       <tags>
         <tag>语法长难句</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构--时间复杂度计算公式（解2022年408第一题）</title>
+    <url>/posts/3.html</url>
+    <content><![CDATA[<p>时间复杂度衡量着一个程序的好坏，时间复杂度的估算是算法题的重中之重。</p>
+<p><strong>2022年408第一题</strong>请快进至此☞ <a href="#%EF%BC%882%EF%BC%892022%E5%B9%B4408%E7%AC%AC%E4%B8%80%E9%A2%98"><strong>2022年408第一题</strong></a></p>
+<h1>一、时间复杂度的概念</h1>
+<p><strong>时间复杂度（Time complexity）是一个函数，它定性描述该算法的运行时间。这是一个代表算法输入值的字符串的长度的函数. 时间复杂度常用大O表述，不包括这个函数的低阶项和首项系数。</strong></p>
+<p><strong>时间复杂度分类</strong>：</p>
+<ol>
+<li>算法完成工作最少需要多少基本操作叫做最优时间复杂度，是一种最乐观最理想的状态。</li>
+<li>算法完成工作最多需要多少基本操作叫做最坏时间复杂度，是算法的一个保障。</li>
+<li>算法完成工作平均需要多少基本操作叫做平均时间复杂度，它可以均匀全面的评价一个算法的好坏。</li>
+</ol>
+<p><strong>时间复杂度基本计算规则</strong>：</p>
+<ol>
+<li>基本操作即只有常数项，认为其时间复杂度为O(1)</li>
+<li>顺序结构，时间复杂度按加法进行计算</li>
+<li>循环结构，时间复杂度按乘法进行计算</li>
+<li>分支结构，时间复杂度取最大值</li>
+<li>判断一个算法效率时，往往只需要关注操作数量的最高次项，其他次要项和常数项可以忽略</li>
+<li>在没有特殊说明时，我们所分析的时间复杂度都是指最坏时间复杂度</li>
+</ol>
+<p><strong>时间复杂度大小比较：</strong></p>
+<p>常见的算法时间复杂度由小到大依次为：Ο(1)＜Ο(log2n)＜Ο(n)＜Ο(nlog2n)＜Ο(n2)＜Ο(n3)＜ Ο(nk) ＜ Ο(2n) ，随着问题规模 n 的不断增大，上述时间复杂度不断增大，算法的执行效率越低</p>
+<h1>二、单层循环时间复杂度计算公式</h1>
+<h2 id="1、解题步骤">1、解题步骤</h2>
+<ol>
+<li>列出循环趟数t及每轮循环i的变化值</li>
+<li>找到t与i的关系</li>
+<li>确定循环停止条件</li>
+<li>联立两式解方程</li>
+<li>写结果</li>
+</ol>
+<h2 id="2、例题分析">2、例题分析</h2>
+<h3 id="（1）步骤分析">（1）步骤分析</h3>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">i = n*n;</span><br><span class="line">whlie(i != <span class="number">1</span>)</span><br><span class="line">    i = i/<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<p><strong>第一步</strong>：列出循环趟数t及每轮循环i 的变化值：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">循环趟数t</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">循环变量i</td>
+<td style="text-align:center">n^2/1</td>
+<td style="text-align:center">n^2/2</td>
+<td style="text-align:center">n^2/4</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第二步</strong>：找出t和i的关系</p>
+<p>i = n^2/2^t</p>
+<p><strong>第四步</strong>：确定循环停止的条件</p>
+<p>i=1时，即n^2 = 2^t，得t = log2n^2 =  2log2n</p>
+<p>所以得到时间复杂度为：</p>
+<p>T(n) = O(log2n)</p>
+<h3 id="（2）例题练习">（2）例题练习</h3>
+<p><strong>例一</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">x = <span class="number">0</span>；</span><br><span class="line"><span class="keyword">while</span> (n&gt;=(x+<span class="number">1</span>)*(x+<span class="number">1</span>))</span><br><span class="line">    x = x+<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<p>T(n) = O(√n)</p>
+<p><strong>例二</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span> (i&lt;=n)</span><br><span class="line">    i = i *<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>T(n) = O( log2n)</p>
+<p><strong>例三</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (i*i*i&lt;=n)</span><br><span class="line">    i ++;</span><br></pre></td></tr></table></figure>
+<p>T(n) = O((n)^(1/3))</p>
+<p><strong>例四</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">y = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (y+<span class="number">1</span>)*(y+<span class="number">1</span>) &lt;= n</span><br><span class="line">    y = y+<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<p>T(n) = O(√n)</p>
+<h1>三、双层循环时间复杂度计算公式</h1>
+<h2 id="1、解题步骤-2">1、解题步骤</h2>
+<ol>
+<li>列出<strong>循环趟数t</strong>及<strong>外层循环i的变化值</strong>和<strong>内层循环j的执行次数</strong></li>
+<li>找到<strong>t</strong>与<strong>i的值</strong>的关系，确定<strong>i的值</strong>与<strong>j的执行次数</strong>的关系（<strong>循环次数t</strong>根据<strong>外层循环i</strong>确定）</li>
+<li>求和，写结果</li>
+</ol>
+<h2 id="2、例题分析-2">2、例题分析</h2>
+<h3 id="（1）典型双循环例题">（1）典型双循环例题</h3>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> m=<span class="number">0</span>,i,j;</span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=<span class="number">2</span>*i;j++)</span><br><span class="line">        m++;</span><br></pre></td></tr></table></figure>
+<p><strong>第一步：<strong>列出</strong>循环趟数t</strong>及<strong>外层循环i的变化值</strong>和<strong>内层循环j的执行次数</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">循环趟数t</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">…</th>
+<th style="text-align:center">k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">外层循环i的值</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">…</td>
+<td style="text-align:center">k</td>
+</tr>
+<tr>
+<td style="text-align:center">内层循环j执行次数</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">…</td>
+<td style="text-align:center">2k次</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第二步：<strong>找到</strong>t</strong>与<strong>i的值</strong>的关系，确定<strong>i的值</strong>与<strong>j的执行次数</strong>的关系（<strong>循环次数t</strong>根据<strong>外层循环i</strong>确定）</p>
+<p>i = k ，临界点为i = n，代入为 n = k ，所以总共循环次数为 k = n</p>
+<p>j执行次数 = 2i = 2k    （<strong>i循环</strong>了几次，<strong>j就执行</strong>了几次）</p>
+<p>**第三步：**求和，写结果</p>
+<p>根据<u>j执行次数</u> = 2i = 2k，明显可以看出：循环了几次，j就执行了几次，所以将 k=n 代入j的总执行次数。</p>
+<p>内层循环j的<strong>总执行次数</strong>为：</p>
+<p>2 + 4 + 6 + … + 2n = n(2n+2)/2 = n(n+1)    // 等差数列求和。。。</p>
+<p>由于是双层循环，内层循环为基本操作，所以时间复杂度为：</p>
+<p>T(n) = O(n^2)</p>
+<h3 id="（2）2022年408第一题">（2）2022年408第一题</h3>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">sum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; n; i *= <span class="number">2</span>) </span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; i; j++) </span><br><span class="line">        sum++;</span><br></pre></td></tr></table></figure>
+<p><strong>第一步：<strong>列出</strong>循环趟数t</strong>及<strong>外层循环i的变化值</strong>和<strong>内层循环j的执行次数</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">循环趟数t</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">…</th>
+<th style="text-align:center">k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">外层循环i的值</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">…</td>
+<td style="text-align:center">2^(k-1)</td>
+</tr>
+<tr>
+<td style="text-align:center">内层循环j执行次数</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">…</td>
+<td style="text-align:center">2^(k-1)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第二步</strong>：找到<strong>t</strong>与<strong>i的值</strong>的关系，确定<strong>i的值</strong>与<strong>j的执行次数</strong>的关系（<strong>循环次数t</strong>根据<strong>外层循环i</strong>确定）</p>
+<p>i = 2^(k-1) ， 临界点为i = n，代入为 n = 2^(k-1) ，所以总共循环次数为k = log2n + 1</p>
+<p><u>j执行次数</u> = i = 2^(k-1)</p>
+<p><strong>第三步</strong>：求和，写结果</p>
+<p>根据<u>j执行次数</u> = i = 2^(k-1) ，明显可以看出：循环了几次，j就执行了几次，所以将 k = log2n + 1 代入j的总执行次数。</p>
+<p>j的<strong>总执行次数</strong>为 = 1 + 2^1 + 2^2 + 2^3 +…+ 2^(k-1) = 2^(log2^(n+1))-1 = 2n - 1     // 等比数列求和</p>
+<p>由于是双层循环，内层循环为基本操作，所以时间复杂度为：</p>
+<p>T(n) = O(n)</p>
+<h3 id="（3）例题练习">（3）例题练习</h3>
+<p><strong>例一</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;m;j++)</span><br><span class="line">        a[i][j] = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<p>T(n) = O(nm)</p>
+<p><strong>例二</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">count = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (k=<span class="number">1</span>;k&lt;=n;k*=<span class="number">2</span>)</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=n;j++)</span><br><span class="line">        count ++;</span><br></pre></td></tr></table></figure>
+<p>T(n) = O(nlog2n)</p>
+<p><strong>例三</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=n<span class="number">-1</span>;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=i;j++)</span><br><span class="line">        <span class="keyword">if</span> A[j] &gt; A [j+<span class="number">1</span>]</span><br><span class="line">            A[j]与A[j+<span class="number">1</span>]交换;</span><br></pre></td></tr></table></figure>
+<p>T(n) = O(n^2)</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>时间复杂度</tag>
       </tags>
   </entry>
 </search>
