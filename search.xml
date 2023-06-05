@@ -324,7 +324,7 @@
 <li>判断一个算法效率时，往往只需要关注操作数量的最高次项，其他次要项和常数项可以忽略</li>
 <li>在没有特殊说明时，我们所分析的时间复杂度都是指最坏时间复杂度</li>
 </ol>
-<p><strong>时间复杂度大小比较：</strong></p>
+<p><strong>时间复杂度大小比较</strong>：</p>
 <p>常见的算法时间复杂度由小到大依次为：Ο(1)＜Ο(log2n)＜Ο(n)＜Ο(nlog2n)＜Ο(n2)＜Ο(n3)＜ Ο(nk) ＜ Ο(2n) ，随着问题规模 n 的不断增大，上述时间复杂度不断增大，算法的执行效率越低</p>
 <h1>二、单层循环时间复杂度计算公式</h1>
 <h2 id="1、解题步骤">1、解题步骤</h2>
@@ -386,7 +386,7 @@
 <h2 id="2、例题分析-2">2、例题分析</h2>
 <h3 id="（1）典型双循环例题">（1）典型双循环例题</h3>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> m=<span class="number">0</span>,i,j;</span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=<span class="number">2</span>*i;j++)</span><br><span class="line">        m++;</span><br></pre></td></tr></table></figure>
-<p><strong>第一步：<strong>列出</strong>循环趟数t</strong>及<strong>外层循环i的变化值</strong>和<strong>内层循环j的执行次数</strong></p>
+<p><strong>第一步</strong>：列出<strong>循环趟数t</strong>及<strong>外层循环i的变化值</strong>和<strong>内层循环j的执行次数</strong></p>
 <table>
 <thead>
 <tr>
@@ -420,10 +420,10 @@
 </tr>
 </tbody>
 </table>
-<p><strong>第二步：<strong>找到</strong>t</strong>与<strong>i的值</strong>的关系，确定<strong>i的值</strong>与<strong>j的执行次数</strong>的关系（<strong>循环次数t</strong>根据<strong>外层循环i</strong>确定）</p>
+<p><strong>第二步</strong>：找到<strong>t</strong>与<strong>i的值</strong>的关系，确定<strong>i的值</strong>与<strong>j的执行次数</strong>的关系（<strong>循环次数t</strong>根据<strong>外层循环i</strong>确定）</p>
 <p>i = k ，临界点为i = n，代入为 n = k ，所以总共循环次数为 k = n</p>
 <p>j执行次数 = 2i = 2k    （<strong>i循环</strong>了几次，<strong>j就执行</strong>了几次）</p>
-<p>**第三步：**求和，写结果</p>
+<p><strong>第三步</strong>：求和，写结果</p>
 <p>根据<u>j执行次数</u> = 2i = 2k，明显可以看出：循环了几次，j就执行了几次，所以将 k=n 代入j的总执行次数。</p>
 <p>内层循环j的<strong>总执行次数</strong>为：</p>
 <p>2 + 4 + 6 + … + 2n = n(2n+2)/2 = n(n+1)    // 等差数列求和。。。</p>
@@ -431,7 +431,7 @@
 <p>T(n) = O(n^2)</p>
 <h3 id="（2）2022年408第一题">（2）2022年408第一题</h3>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">sum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; n; i *= <span class="number">2</span>) </span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; i; j++) </span><br><span class="line">        sum++;</span><br></pre></td></tr></table></figure>
-<p><strong>第一步：<strong>列出</strong>循环趟数t</strong>及<strong>外层循环i的变化值</strong>和<strong>内层循环j的执行次数</strong></p>
+<p><strong>第一步</strong>：列出<strong>循环趟数t</strong>及<strong>外层循环i的变化值</strong>和<strong>内层循环j的执行次数</strong></p>
 <table>
 <thead>
 <tr>
@@ -473,7 +473,7 @@
 <p><u>j执行次数</u> = i = 2^(k-1)</p>
 <p><strong>第三步</strong>：求和，写结果</p>
 <p>根据<u>j执行次数</u> = i = 2^(k-1) ，明显可以看出：循环了几次，j就执行了几次，所以将 k = log2n + 1 代入j的总执行次数。</p>
-<p>j的<strong>总执行次数</strong>为 = 1 + 2^1 + 2^2 + 2^3 +…+ 2^(k-1) = 2^(log2^(n+1))-1 = 2n - 1     // 等比数列求和</p>
+<p>j的<strong>总执行次数</strong>为 = 1 + 2^1 + 2^2 + 2^3 +…+ 2^(k-1) = 2^(log2^n+1)-1 = 2n - 1     // 等比数列求和</p>
 <p>由于是双层循环，内层循环为基本操作，所以时间复杂度为：</p>
 <p>T(n) = O(n)</p>
 <h3 id="（3）例题练习">（3）例题练习</h3>
