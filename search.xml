@@ -495,4 +495,20 @@
         <tag>时间复杂度</tag>
       </tags>
   </entry>
+  <entry>
+    <title>英语阅读理解---做题步骤</title>
+    <url>/posts/4.html</url>
+    <content><![CDATA[<h1>方法应用</h1>
+<h2 id="1、涉及转折-but-等">1、涉及转折 but 等</h2>
+<p>题干中涉及到but等<code>转折性词语</code>时，分析文章中该句原句，根据转折前后判断该句<code>肯定了xx</code>，<code>否定了xx</code></p>
+<p>题干中没有明确说否定时，在选项中找肯定xx相关的，</p>
+<p>题干中说明找否定时，在选项中找否定xx的。</p>
+]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+      <tags>
+        <tag>阅读理解</tag>
+      </tags>
+  </entry>
 </search>
